@@ -80,14 +80,15 @@ export default function Home() {
         <p className="text-neutral-500 text-sm font-semibold">
           Do nothing for ...
         </p>
-        <div className="space-x-5 space-y-2 mt-4">
+        <div className="flex gap-3 flex-wrap mt-4">
           {presetOptions.map((preset) => (
-            <button
-              className="rounded-full bg-gradient-to-b from-neutral-950 to-neutral-900 font-xs px-3 py-1 shadow-xs shadow-neutral-700"
+            <Link
+              href={`/start/${preset.value}`}
+              className="block w-fit rounded-full bg-gradient-to-b from-neutral-950 to-neutral-900 font-xs px-3 py-1 shadow-xs shadow-neutral-700"
               key={preset.value}
             >
               {preset.label}
-            </button>
+            </Link>
           ))}
         </div>
       </div>

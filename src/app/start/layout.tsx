@@ -18,20 +18,18 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${crimsonSerif.variable} antialiased h-screen`}>
-        <div className="overflow-hidden relative py-20 sm:px-16 px-10 md:max-w-3/4 lg:max-w-1/2 m-auto flex flex-col gap-3 justify-center h-full">
-          <h1 className="font-serif text-xl sm:text-2xl font-black text-neutral-400">
-            Greetings, Stranger
-          </h1>
-          <div className="sm:text-2xl text-xl font-black font-serif">
-            <h2>Ease your mind.</h2>
-            <h2>Settle into silence,</h2>
-            <h2>And simply do nothing.</h2>
-          </div>
-          {children}
+    <div className={`${crimsonSerif.variable} antialiased h-screen`}>
+      <div className="overflow-hidden relative py-20 sm:px-16 px-10 md:max-w-3/4 lg:max-w-1/2 m-auto flex flex-col gap-3 justify-center h-full">
+        <h1 className="font-serif text-xl sm:text-2xl font-black text-neutral-400">
+          Greetings, Stranger
+        </h1>
+        <div className="sm:text-2xl text-xl font-black font-serif">
+          <h2>Ease your mind.</h2>
+          <h2>Settle into silence,</h2>
+          <h2>And simply do nothing.</h2>
         </div>
-      </body>
-    </html>
+        {children}
+      </div>
+    </div>
   );
 }

@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import { PlanEnum } from "../utils/types";
 import { timerOptions } from "../utils/timerOptions";
+import Link from "../../node_modules/next/link";
+import classNames from "classnames";
 
-interface Props {}
-
-export default function PlanForm({}: Props) {
+export default function PlanForm() {
   const [plans, setPlans] = useState<PlanEnum>(PlanEnum.nothing);
   const [timer, setTimer] = useState<number>(0);
   const submitPlan = (e: any) => {
@@ -43,13 +43,12 @@ export default function PlanForm({}: Props) {
         </select>
       </div>
 
-      <button
-        type="submit"
-        disabled={plans === PlanEnum.something}
-        className="bg-white text-black py-2 px-1 rounded-xs font-medium disabled:bg-neutral-500"
+      <Link
+        href={timer === 0 ? "/start" : `/start/${timer}`}
+        className={classNames("bg-white text-black py-2 px-1 rounded-xs font-medium block text-center", plans === PlanEnum.something ? "pointer-events-disabled bg-neutral-500" : "cursor-pointer bg-white")}
       >
         Start Doing Nothing
-      </button>
+      </Link>
     </form>
   );
 }
