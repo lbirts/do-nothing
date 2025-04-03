@@ -7,6 +7,6 @@ export const presetOptions = [
     { label: "15 minutes", value: 15 },
     { label: "20 minutes", value: 20 },
     { label: "25 minutes", value: 25 },
-    { label: "30 minutes", value: 32 },
+    { label: "30 minutes", value: 30 },
 ];
   

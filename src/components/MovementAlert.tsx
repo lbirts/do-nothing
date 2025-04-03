@@ -51,7 +51,7 @@ export default function MovementAlert({ action }: Props) {
        <div
       className="border border-neutral-800 bg-neutral-900 text-neutral-500 text-sm px-4 py-3 w-fit mx-auto"
     >
-      That's definitely something--let's try nothing.
+      That&apos;s definitely something--let&apos;s try nothing.
     </div>
     </div>
    

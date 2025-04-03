@@ -11,7 +11,7 @@ export const timerOptions = [
   { label: "22 minutes", value: 22 },
   { label: "25 minutes", value: 25 },
   { label: "27 minutes", value: 27 },
-  { label: "30 minutes", value: 32 },
+  { label: "30 minutes", value: 30 },
   { label: "33 minutes", value: 33 },
   { label: "36 minutes", value: 36 },
   { label: "42 minutes", value: 42 },

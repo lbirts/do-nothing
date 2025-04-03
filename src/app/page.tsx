@@ -5,7 +5,7 @@ import { presetOptions } from "../utils/presetOptions";
 
 export default function Home() {
   return (
-    <div className="py-20 sm:px-16 px-10 md:max-w-3/4 lg:max-w-1/2 m-auto">
+    <div className="py-20 sm:px-16 px-6 md:max-w-3/4 lg:max-w-1/2 m-auto">
       <Image
         src="logo.svg"
         alt="Nothing Logo"
@@ -32,17 +32,17 @@ export default function Home() {
           never stops demanding your attention. This simple yet powerful tool
           creates moments of pure presence, allowing you to disconnect from the
           relentless stream of information and reconnect with your authentic
-          self. As the timer counts down, you'll feel the weight of constant
+          self. As the timer counts down, you&apos;ll feel the weight of constant
           connectivity lifting, replaced by a lightness that comes from giving
           yourself permission to simply exist without purpose or productivity.
         </p>
         <p className="text-neutral-500 font-semibold sm:text-lg text-base font-serif">
           The Nothing Timer transforms emptiness into a gateway for renewal,
-          inviting insights that can't emerge when your mind is crowded with
+          inviting insights that can&apos;t emerge when your mind is crowded with
           endless inputs. Unlike the shallow dopamine hits that keep us
           scrolling and tapping, these intentional pauses tap into a deeper
           wellspring of fulfillment—one that awakens forgotten parts of yourself
-          that thrive in stillness. With each session, you'll rediscover the
+          that thrive in stillness. With each session, you&apos;ll rediscover the
           expansiveness that exists when you create space between thoughts, like
           clearing fog from a window to reveal a vibrant landscape that was
           always there.
@@ -53,7 +53,7 @@ export default function Home() {
           monetize it. The benefits extend beyond those precious minutes of
           disconnection, gradually rebuilding your capacity for deep thought and
           genuine presence in a world that has forgotten their worth. As you
-          develop this practice, you'll notice the quality of your attention
+          develop this practice, you&apos;ll notice the quality of your attention
           transforming, not just during your nothing sessions but throughout
           your day—like islands of clarity expanding in the digital noise that
           surrounds us.

@@ -9,12 +9,9 @@ import classNames from "classnames";
 export default function PlanForm() {
   const [plans, setPlans] = useState<PlanEnum>(PlanEnum.nothing);
   const [timer, setTimer] = useState<number>(0);
-  const submitPlan = (e: any) => {
-    e.preventDefault();
-  };
 
   return (
-    <form className="flex flex-col gap-4 sm:w-3/4 mt-10" onSubmit={submitPlan}>
+    <div className="flex flex-col gap-4 sm:w-3/4 mt-10">
       <div className="flex flex-col gap-1">
         <label className="font-black text-sm text-neutral-500">What is your plan?</label>
         <select
@@ -49,6 +46,6 @@ export default function PlanForm() {
       >
         Start Doing Nothing
       </Link>
-    </form>
+    </div>
   );
 }

@@ -10,9 +10,7 @@ export default function Start() {
   const [lowLights, setLowLights] = useState(false);
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
-
-    interval = setInterval(() => {
+    const interval = setInterval(() => {
       setTimer((prevTime) => {
         const newTime = prevTime + 1;
 
@@ -26,18 +24,26 @@ export default function Start() {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, []);
+  }, [lowLights]);
 
   const resetTimer = () => {
     setTimer(0);
     setLowLights(false);
   }
 
+  const formatTime = (seconds: number) => {
+    if (seconds < 100) {
+      return seconds.toString().padStart(3, "0");
+    }
+    
+    return seconds.toLocaleString();
+  };
+
   return (
     <>
       <LowLightText lowLights={lowLights} />
       <h3 className={classNames("font-serif text-xl sm:text-2xl font-black text-neutral-400 transition-all duration-1000", lowLights ? "opacity-50" : "opacity-100")}>
-        You've been idle for {timer} seconds.
+        You&apos;ve been idle for {formatTime(timer)} second{timer === 1 ? "" : "s"}.
       </h3>
       <MovementAlert action={resetTimer} />
     </>
