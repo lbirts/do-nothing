@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="py-20 sm:px-16 px-6 md:max-w-3/4 lg:max-w-1/2 m-auto">
       <Image
-        src="logo.svg"
+        src="Logo.svg"
         alt="Nothing Logo"
         height={0}
         width={0}
