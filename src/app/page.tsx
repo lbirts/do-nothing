@@ -1,10 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 import PlanForm from "../components/PlanForm";
 import { presetOptions } from "../utils/presetOptions";
 
 export default function Home() {
   return (
     <div className="py-20 sm:px-16 px-10 md:max-w-3/4 lg:max-w-1/2 m-auto">
+      <Image
+        src="logo.svg"
+        alt="Nothing Logo"
+        height={0}
+        width={0}
+        className="h-10 w-10 mb-2"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
       <h1 className="font-display text-2xl sm:text-3xl font-black">Nothing</h1>
       <h2 className="text-neutral-500 text-sm font-semibold">
         ... simply do nothing
