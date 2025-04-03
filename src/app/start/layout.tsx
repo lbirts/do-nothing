@@ -26,7 +26,7 @@ export default function Layout({
     >
       <Link className="block" href="/">
         <Image
-          src="Logo.svg"
+          src="/Logo.svg"
           alt="Nothing Logo"
           height={0}
           width={0}
