@@ -42,7 +42,7 @@ export default function PlanForm() {
 
       <Link
         href={timer === 0 ? "/start" : `/start/${timer}`}
-        className={classNames("bg-white text-black py-2 px-1 rounded-xs font-medium block text-center", plans === PlanEnum.something ? "pointer-events-disabled bg-neutral-500" : "cursor-pointer bg-white")}
+        className={classNames("text-black py-2 px-1 rounded-xs font-medium block text-center", plans === PlanEnum.something ? "pointer-events-none bg-neutral-500" : "cursor-pointer bg-white")}
       >
         Start Doing Nothing
       </Link>
