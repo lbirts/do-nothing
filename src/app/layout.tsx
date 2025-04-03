@@ -4,17 +4,19 @@ import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"],
 });
 
 const interSans = Inter({
   variable: "--font-inter-sans",
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
 
 const crimsonSerif = Crimson_Text({
   variable: "--font-crimson-serif",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
